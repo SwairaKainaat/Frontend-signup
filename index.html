@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="index.css" >
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signup</title>
+
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>Create an account</h1>
+
+    <form id="signupForm" novalidate>
+      <div class="field">
+        <label for="fullName">Full name</label>
+        <input id="fullName" name="fullName" type="text" required />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div style="display:flex;gap:8px;align-items:center">
+          <input id="password" name="password" type="password" minlength="8" required />
+          <button type="button" class="toggle" id="togglePwd">Show</button>
+        </div>
+        <div class="small">Minimum 8 characters.</div>
+      </div>
+
+      <div class="field">
+        <label for="confirm">Confirm password</label>
+        <input id="confirm" name="confirm" type="password" required />
+      </div>
+
+      <div class="actions">
+        <button id="submitBtn" type="submit">Sign up</button>
+      </div>
+
+      <div id="message" class="msg" aria-live="polite"></div>
+    </form>
+
+
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>

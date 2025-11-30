@@ -1,0 +1,22 @@
+ 
+    :root
+     {--bg:#f5f7fb;--card:#ffffff;--accent:#0b69ff;--muted:#6b7280;--error:#b00020;--success:#0b7a3a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;color:#0f1724;background:var(--bg);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    .card{background:var(--card);padding:28px;border-radius:12px;box-shadow:0 8px 30px rgba(15,23,36,0.07);width:380px}
+    h1{margin:0 0 14px;font-size:20px;color:#0f1724}
+    .field{margin-bottom:14px}
+    label{display:block;font-size:13px;margin-bottom:6px;color:#0b1220}
+    input[type="text"],input[type="password"]{width:100%;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:14px}
+    input:focus{outline:none;border-color:var(--accent);box-shadow:0 4px 12px rgba(11,105,255,0.06)}
+    .small{font-size:12px;color:var(--muted);margin-top:6px}
+    .actions{display:flex;justify-content:flex-end;align-items:center;margin-top:8px}
+    button{background:var(--accent);color:#fff;padding:10px 14px;border:none;border-radius:8px;cursor:pointer;font-weight:600}
+    button[disabled]{opacity:0.6;cursor:default}
+    .toggle{background:transparent;border:none;color:var(--accent);cursor:pointer;font-size:13px;padding:6px}
+    .msg{margin-top:12px;font-size:13px;min-height:18px}
+    .msg.error{color:var(--error)}
+    .msg.success{color:var(--success)}
+    /* responsive */
+    @media (max-width:420px){.card{width:100%;padding:20px}}
+  
